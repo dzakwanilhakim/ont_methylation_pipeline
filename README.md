@@ -94,7 +94,7 @@ myproject/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/ont_methylation_pipeline.git
+git clone https://github.com/dzakwanilhakim/ont_methylation_pipeline.git
 cd ont_methylation_pipeline
 ```
 
