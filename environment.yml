@@ -1,0 +1,16 @@
+name: ontmethyl_env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - minimap2>=2.24
+  - samtools>=1.17
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - ncurses
+  # modkit is installed via cargo (see src/00_setup_env.sh)
+  # dorado is installed manually (see README.md)

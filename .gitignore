@@ -1,0 +1,70 @@
+# ── Large sequencing data files ───────────────────────────────────────────────
+*.pod5
+*.bam
+*.bam.bai
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.fast5
+
+# ── Reference FASTA ──────────────────────────────────────────────────────────
+# (large — distribute separately or via DVC/Zenodo)
+*.fasta
+*.fa
+*.fai
+*.fasta.fai
+
+# ── Analysis outputs ─────────────────────────────────────────────────────────
+analysis/01_basecalled/
+analysis/02_demuxed/
+analysis/03_aligned/
+analysis/04_pileup/
+analysis/05_beta_matrix/
+
+# Keep the directory structure
+!analysis/*/.gitkeep
+!data/.gitkeep
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+*.whl
+.venv/
+venv/
+env/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Conda ────────────────────────────────────────────────────────────────────
+.conda/
+
+# ── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Temp / scratch ────────────────────────────────────────────────────────────
+tmp/
+scratch/
+*.tmp
