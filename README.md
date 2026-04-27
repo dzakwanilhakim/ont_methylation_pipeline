@@ -89,6 +89,45 @@ myproject/
 
 ---
 
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/<your-username>/ont_methylation_pipeline.git
+cd ont_methylation_pipeline
+```
+
+### 2. Set up the conda environment
+
+```bash
+bash src/00_setup_env.sh
+conda activate ontmethyl_env
+```
+
+### 3. Install Dorado manually
+
+Dorado is **not** on conda. Download and add to your PATH:
+
+```bash
+curl "https://cdn.oxfordnanoportal.com/software/analysis/dorado-1.4.0-linux-x64.tar.gz" \
+    -o dorado-1.4.0-linux-x64.tar.gz
+tar -xzf dorado-1.4.0-linux-x64.tar.gz
+export PATH="$PWD/dorado-1.4.0-linux-x64/bin:$PATH"
+# Optionally add the export line to your ~/.bashrc for persistence
+```
+
+### 4. Place your input data
+
+```
+ont_methylation_pipeline/
+└── data/
+    ├── pod5/                        ← copy your raw .pod5 files here
+    └── Buffered_5000_Fasta.fasta    ← copy your buffered reference here
+```
+
+---
+
 ## Quick Start
 
 ### Run the full pipeline
