@@ -8,6 +8,8 @@
 *.fq.gz
 *.fast5
 
+/analysis/
+
 # ── Reference FASTA ──────────────────────────────────────────────────────────
 # (large — distribute separately or via DVC/Zenodo)
 *.fasta
@@ -68,3 +70,5 @@ desktop.ini
 tmp/
 scratch/
 *.tmp
+
+/data/
